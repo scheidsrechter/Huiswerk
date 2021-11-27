@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inschrijfformulier</title>
+</head>
+<body>
+<h1>Inschrijven</h1>
+<form>
+<fieldset>
+<legend>Persoonlijke gegevens</legend><br>
+<label for="naam">Naam:</label>
+<input id="naam" type="text" name="naam"><br><br>
+<input type="radio" name="geslacht" value="man" checked>Man
+<input type="radio" name="geslacht" value="vrouw">Vrouw
+<input type="radio" name="geslacht" value="anders">Anders <br><br>
+<label for="adres">Adres:</label>
+<input type="text" id="adres" name="adres"><br><br>
+<label for="postcode">Postcode:</label>
+<input type="text" id="postcode" name="postcode"><br><br>
+<label for=" woonplaats">Woonplaats:</label>
+<input type="text" id="woonplaats" name="woonplaats"><br><br>
+<label for="profielfoto">Selecteer een profielfoto</label>
+<input type="file" id="profielfoto" name="profielfoto"><br><br>
+</fieldset>
+
+<fieldset>
+<legend>Inschrijvingsinformatie</legend><br>
+<b> Selecteer een cursus</b><br>
+<input type="checkbox" name="onderwerpen" value="ja">Voetballen
+<input type="checkbox" name="onderwerpen" value="ja">Zaalvoetbal
+<input type="checkbox" name="onderwerpen" value="ja">Handbal
+<input type="checkbox" name="onderwerpen" value="ja">Functie bestuur <br><br>
+
+<b> Selecteer uw hoogst genoten opleiding</b><br>
+<select name="opleiding">
+<option value="geen">Geen</option>
+<option value="Middelbaar onderwijs" selected>
+Middelbaar onderwijs</option>
+<option value="hbo">Hoger beroepsonderwijs</option>
+<option value="wo">Wetenschappelijk onderwijs</option>
+</select><br><br>
+<b> Selecteer uw gewenste startdatum</b><br>
+<input type="date" name="datum" max="2080-12-31"><br><br>
+</fieldset><br>
+
+<input type="submit" value="Verzend">
+
+</form>
+</body>
+</html>
